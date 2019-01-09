@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const port = 8000;
-const users = require('./data/rugs.json');
+const users = require('./data/result1.json');
 
 const path = require('path');
 
