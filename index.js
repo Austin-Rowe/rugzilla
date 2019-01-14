@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const port = 8000;
-const users = require('./data/result1.json');
+const rugs = require('./data/result8.json');
 
 const path = require('path');
 
@@ -14,7 +14,7 @@ app.use(express.json(), (req, res, next) => {
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/rugs', (req, res, next) => {
-    res.json(users);    
+    res.json(rugs);    
 });
 
 app.post('/confirm-payment', (req, res) => {
